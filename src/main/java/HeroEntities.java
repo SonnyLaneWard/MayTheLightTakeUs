@@ -12,6 +12,10 @@ public class HeroEntities extends Entities{
         this.strenth = strenth - wisdom;
     }
 
+    public void setStrenth(int strenth) {
+        this.strenth = strenth;
+    }
+
     public void statistics()
     {
       System.out.println("Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth);

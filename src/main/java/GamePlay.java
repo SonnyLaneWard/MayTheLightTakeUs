@@ -33,7 +33,7 @@ public class GamePlay {
         if (command == 1)
         {
             System.out.println(begin.number(3));
-
+            hero.setStrenth(2);
             hero.statistics();
         }
        else if (command == 2)
