@@ -23,6 +23,8 @@ public class LichDialog {
          System.out.println("LICH::: Well you see ... i hate people that a lost - so - goodbye"+ RESET);
          System.out.println(RED + "The fight has begun"+ RESET);
          LichFight.fight();
+         System.out.println(GREEN + "All that left of lich is his crown, so you pick it"+ RESET);
+
 
      }
        else if (command == 2) {

@@ -66,6 +66,7 @@ public class GamePlay {
             }
 
             LichDialog.talk();
+            System.out.println(YELLOW + "You now have a new weapon" + RESET);
 
         }
        else if (command == 2)
