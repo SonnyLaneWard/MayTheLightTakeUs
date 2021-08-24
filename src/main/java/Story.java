@@ -8,7 +8,7 @@ public String number(int num_story)
 {
     String s = null;
     switch (num_story){
-        case (10) :
+        case (0) :
             try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\sin\\IdeaProjects\\MayTheLightTakeUs\\src\\main\\java\\BeginEn.txt")))
             {
                
@@ -24,7 +24,7 @@ public String number(int num_story)
             }
             break;
 
-        case (11) :
+        case (1) :
             try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\sin\\IdeaProjects\\MayTheLightTakeUs\\src\\main\\java\\BeginRu.txt")))
             {
                

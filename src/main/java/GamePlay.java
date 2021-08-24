@@ -4,7 +4,7 @@ public class GamePlay {
 
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Choose language");
+        System.out.println("Choose language:0 for English, 1 for Russian");
         int choselanguage = in.nextInt();
 
 
