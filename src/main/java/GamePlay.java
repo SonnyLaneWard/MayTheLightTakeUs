@@ -48,6 +48,10 @@ public class GamePlay {
             hero.setSanity(9);
             hero.statistics();
             hero.talk();
+            DarkEntities lich = new DarkEntities();
+            lich.setName("KING LICH");
+            lich.setStrength(8);
+            lich.talk();
 
         }
        else if (command == 2)
