@@ -26,5 +26,8 @@ public class GamePlay {
         {
             hero.statistics();
         }
+
+        System.out.println(begin.number(2));
+
     }
 }
