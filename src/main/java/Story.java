@@ -9,7 +9,7 @@ public String number(int num_story)
     String s = null;
     switch (num_story){
         case (10) :
-            try(BufferedReader br = new BufferedReader(new FileReader("BeginEn.txt")))
+            try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\sin\\IdeaProjects\\MayTheLightTakeUs\\src\\main\\java\\BeginEn.txt")))
             {
                 while((s=br.readLine())!=null){
                     s=br.readLine();
