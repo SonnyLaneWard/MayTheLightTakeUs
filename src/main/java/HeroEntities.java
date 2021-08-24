@@ -9,21 +9,26 @@ public class HeroEntities extends Entities{
         String name;
          int wisdom;
          int strenth;
+         int sanity;
 
 
-    public HeroEntities(String name, int wisdom, int strenth) {
+    public HeroEntities(String name, int wisdom, int strenth, int sanity) {
         this.name = name;
         this.wisdom = wisdom;
         this.strenth = wisdom- strenth;
+        this.sanity = sanity;
     }
 
     public void setStrenth(int strenth) {
         this.strenth = strenth;
     }
+    public void setSanity(int sanity){
+        this.sanity = sanity;
+    }
 
     public void statistics()
     {
-      System.out.println(GREEN + "Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth+ RESET);
+      System.out.println(GREEN + "Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth + " your sanity is " + sanity+ RESET);
 
     }
     @Override
