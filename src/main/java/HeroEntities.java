@@ -1,4 +1,9 @@
 public class HeroEntities extends Entities{
+    public static final String RESET = "\u001B[0m";
+    public static final String BLACK = "\u001B[30m";
+    public static final String RED = "\u001B[31m";
+    public static final String GREEN = "\u001B[32m";
+    public static final String YELLOW = "\u001B[33m";
 
 
         String name;
@@ -18,12 +23,12 @@ public class HeroEntities extends Entities{
 
     public void statistics()
     {
-      System.out.println("Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth);
+      System.out.println(GREEN + "Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth+ RESET);
 
     }
     @Override
     public void talk() {
-        System.out.println("I should not at least forget my name -" + name);
+        System.out.println(RED + "I should not at least forget my name -" + name + RESET);
     }
 
     @Override

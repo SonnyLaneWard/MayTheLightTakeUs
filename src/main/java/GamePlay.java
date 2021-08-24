@@ -1,5 +1,12 @@
 import java.util.Scanner;
+
 public class GamePlay {
+    public static final String RESET = "\u001B[0m";
+    public static final String BLACK = "\u001B[30m";
+    public static final String RED = "\u001B[31m";
+    public static final String GREEN = "\u001B[32m";
+    public static final String YELLOW = "\u001B[33m";
+
     public static void main(String[] args) {
 
 
@@ -9,7 +16,7 @@ public class GamePlay {
 
 
         Story begin = new Story();
-         System.out.println(begin.number(choselanguage));
+         System.out.println(YELLOW + begin.number(choselanguage) + RESET);
 
         Scanner line = new Scanner(System.in);
         System.out.println("Insert your name");
@@ -27,12 +34,12 @@ public class GamePlay {
             hero.statistics();
         }
 
-        System.out.println(begin.number(2));
+        System.out.println(YELLOW + begin.number(2) + RESET);
         System.out.println("Insert ");
         command = in.nextInt();
         if (command == 1)
         {
-            System.out.println(begin.number(3));
+            System.out.println(YELLOW + begin.number(3) + RESET);
             hero.setStrenth(2);
             hero.statistics();
             hero.talk();
