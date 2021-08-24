@@ -35,6 +35,7 @@ public class GamePlay {
             System.out.println(begin.number(3));
             hero.setStrenth(2);
             hero.statistics();
+            hero.talk();
         }
        else if (command == 2)
         {

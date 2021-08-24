@@ -9,7 +9,7 @@ public class HeroEntities extends Entities{
     public HeroEntities(String name, int wisdom, int strenth) {
         this.name = name;
         this.wisdom = wisdom;
-        this.strenth = strenth - wisdom;
+        this.strenth = wisdom- strenth;
     }
 
     public void setStrenth(int strenth) {
