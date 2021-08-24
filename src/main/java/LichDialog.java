@@ -21,6 +21,8 @@ public class LichDialog {
          int wait = in.nextInt();
          System.out.println(GREEN + "LICH::: SO you are lost....");
          System.out.println("LICH::: Well you see ... i hate people that a lost - so - goodbye"+ RESET);
+         System.out.println(RED + "The fight has begun"+ RESET);
+         LichFight.fight();
 
      }
        else if (command == 2) {
