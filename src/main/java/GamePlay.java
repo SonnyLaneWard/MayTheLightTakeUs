@@ -28,6 +28,21 @@ public class GamePlay {
         }
 
         System.out.println(begin.number(2));
+        System.out.println("Insert ");
+        command = in.nextInt();
+        if (command == 1)
+        {
+            System.out.println(begin.number(3));
 
+            hero.statistics();
+        }
+       else if (command == 2)
+        {
+            hero.statistics();
+        }
+        else if (command == 3)
+        {
+            hero.statistics();
+        }
     }
 }
