@@ -64,6 +64,9 @@ public class GamePlay {
             else if (peek == 0){
                 System.out.println(YELLOW + "I get it - you are tough" + RESET);
             }
+
+            LichDialog.talk();
+
         }
        else if (command == 2)
         {
