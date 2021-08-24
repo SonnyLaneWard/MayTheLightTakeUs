@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Entities {
+abstract class Entities {
+    public abstract void talk();
+    public abstract void hit();
 }
