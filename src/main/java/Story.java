@@ -11,10 +11,12 @@ public String number(int num_story)
         case (10) :
             try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\sin\\IdeaProjects\\MayTheLightTakeUs\\src\\main\\java\\BeginEn.txt")))
             {
-                while((s=br.readLine())!=null){
+               
+
                     s=br.readLine();
 
-                }
+
+
             }
             catch(IOException ex){
 
@@ -23,19 +25,23 @@ public String number(int num_story)
             break;
 
         case (11) :
-            try(BufferedReader br = new BufferedReader(new FileReader("BeginRu.txt")))
+            try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\sin\\IdeaProjects\\MayTheLightTakeUs\\src\\main\\java\\BeginRu.txt")))
             {
-                while((s=br.readLine())!=null){
+               
+
                     s=br.readLine();
 
-                }
+
             }
             catch(IOException ex){
 
                 System.out.println(ex.getMessage());
             }
             break;
+        default:
+            throw new IllegalStateException("Unexpected value: " + num_story);
     }
+
 
     return s;
 }

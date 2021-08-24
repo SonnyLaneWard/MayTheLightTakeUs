@@ -9,7 +9,7 @@ public class GamePlay {
 
 
         Story begin = new Story();
-        begin.number(10);
+         System.out.println(begin.number(choselanguage));
 
     }
 }
