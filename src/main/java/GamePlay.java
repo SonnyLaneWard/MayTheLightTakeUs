@@ -11,5 +11,20 @@ public class GamePlay {
         Story begin = new Story();
          System.out.println(begin.number(choselanguage));
 
+        Scanner line = new Scanner(System.in);
+        System.out.println("Insert your name");
+        String name = line.nextLine();
+        System.out.println("Insert your wisdom points (no more than 9)");
+        int wisdom = in.nextInt();
+        System.out.println("Insert your wisdom points (no more than 4, and it depends....)");
+        int strength = in.nextInt();
+
+        HeroEntities hero = new HeroEntities(name,wisdom,strength);
+        System.out.println("Insert 1 to watch your hero stats");
+        int command = in.nextInt();
+        if (command == 1)
+        {
+            hero.statistics();
+        }
     }
 }
