@@ -23,7 +23,7 @@ public class GamePlay {
         String name = line.nextLine();
         System.out.println("Insert your wisdom points (no more than 9)");
         int wisdom = in.nextInt();
-        System.out.println("Insert your wisdom points (no more than 4, and it depends....)");
+        System.out.println("Insert your strength points (no more than 4, and it depends....)");
         int strength = in.nextInt();
         int sanity = 10;
         HeroEntities hero = new HeroEntities(name,wisdom,strength,sanity);
@@ -46,7 +46,9 @@ public class GamePlay {
             System.out.println(YELLOW + begin.number(4) + RESET);
             hero.talk();
             hero.setSanity(9);
+            hero.statistics();
             hero.talk();
+
         }
        else if (command == 2)
         {
