@@ -20,7 +20,7 @@ public class DarkEntities extends Entities {
 
     @Override
     public void talk() {
-       System.out.println(RED + "My  ... name .... is" + name + RESET);
+       System.out.println(RED + "My  ... name .... is " + name + RESET);
     }
 
     @Override

@@ -52,7 +52,18 @@ public class GamePlay {
             lich.setName("KING LICH");
             lich.setStrength(8);
             lich.talk();
-
+            System.out.println(YELLOW + "You can peek at his stats if you want but it will cost you sanity" + RESET);
+            System.out.println(YELLOW + "SO? (1 - yes, 0- no)" + RESET);
+            int peek = in.nextInt();
+            if (peek == 1)
+            {
+                hero.setSanity(8);
+                hero.statistics();
+                lich.statistics();
+            }
+            else if (peek == 0){
+                System.out.println(YELLOW + "I get it - you are tough" + RESET);
+            }
         }
        else if (command == 2)
         {
