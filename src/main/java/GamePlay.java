@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GamePlay {
@@ -29,6 +30,7 @@ public class GamePlay {
         HeroEntities hero = new HeroEntities(name,wisdom,strength,sanity);
         System.out.println("Insert 1 to watch your hero stats");
         int command = in.nextInt();
+
         if (command == 1)
         {
             hero.statistics();
