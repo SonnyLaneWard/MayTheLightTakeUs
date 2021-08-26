@@ -39,7 +39,7 @@ public class GamePlay {
         }
 
         System.out.println(YELLOW + begin.number(2) + RESET);
-        System.out.println("Insert ");
+        System.out.println("Insert "); //Crossroad1
         command = in.nextInt();
         if (command == 1)
         {
@@ -70,9 +70,10 @@ public class GamePlay {
 
             LichDialog.talk();
             LichFight.fight();
-            System.out.println(GREEN + "All that left of lich is his crown, so you pick it"+ RESET);
+            System.out.println(GREEN + "All that left of lich is his staff, so you pick it"+ RESET);
             System.out.println(YELLOW + "You now have a new weapon" + RESET);
-            Weapon LichsStaff = new Weapon(2);
+            Weapon weapon = new Weapon(2, "Lich's Staff");
+            Stats.stats(weapon);
 
 
         }
