@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class HeroEntities extends Entities{
     public static final String RESET = "\u001B[0m";
     public static final String BLACK = "\u001B[30m";
@@ -31,9 +33,15 @@ public class HeroEntities extends Entities{
       System.out.println(GREEN + "Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth + " your sanity is " + sanity+ RESET);
 
     }
+
+
+
+
+
+
     @Override
     public void talk() {
-        System.out.println(RED + "I should not at least forget my name -" + name + RESET);
+        System.out.println(RED + "I should not at least forget my name - " + name + RESET);
     }
 
     @Override
