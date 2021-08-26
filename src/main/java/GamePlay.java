@@ -28,12 +28,14 @@ public class GamePlay {
         int strength = in.nextInt();
         int sanity = 10;
         HeroEntities hero = new HeroEntities(name,wisdom,strength,sanity);
+
         System.out.println("Insert 1 to watch your hero stats");
+
         int command = in.nextInt();
 
         if (command == 1)
         {
-            hero.statistics();
+            Stats.stats(hero);
         }
 
         System.out.println(YELLOW + begin.number(2) + RESET);
@@ -60,15 +62,18 @@ public class GamePlay {
             if (peek == 1)
             {
                 hero.setSanity(8);
-                hero.statistics();
-                lich.statistics();
+                Stats.stats(hero, lich);
             }
             else if (peek == 0){
                 System.out.println(YELLOW + "I get it - you are tough" + RESET);
             }
 
             LichDialog.talk();
+            LichFight.fight();
+            System.out.println(GREEN + "All that left of lich is his crown, so you pick it"+ RESET);
             System.out.println(YELLOW + "You now have a new weapon" + RESET);
+            Weapon LichsStaff = new Weapon(2);
+
 
         }
        else if (command == 2)

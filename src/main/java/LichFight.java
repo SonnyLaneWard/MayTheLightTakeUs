@@ -17,7 +17,7 @@ public class LichFight {
            int wait = in.nextInt();
            System.out.println("the lich doesnt respond");
            lich.setStrength(lich.strength - 1);
-           lich.statistics();
+          System.out.println(lich.statistics());
        }
         System.out.println("the lich is no more...passed away...rip....dead");
     }

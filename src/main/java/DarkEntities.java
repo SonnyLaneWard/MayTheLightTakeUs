@@ -27,9 +27,9 @@ public class DarkEntities extends Entities {
     public void hit() {
         System.out.println("and now you gonna die");
     }
-    public void statistics()
+    public String statistics()
     {
-        System.out.println(GREEN + "ITS name is "+ name + " its strength is " + strength+ RESET);
+       return (GREEN + "ITS name is "+ name + " its strength is " + strength+ RESET);
 
     }
 

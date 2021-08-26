@@ -28,9 +28,9 @@ public class HeroEntities extends Entities{
         this.sanity = sanity;
     }
 
-    public void statistics()
+    public String statistics()
     {
-      System.out.println(GREEN + "Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth + " your sanity is " + sanity+ RESET);
+     return (GREEN + "Your name is "+ name + " your wisdom is " + wisdom + " your strength is " + strenth + " your sanity is " + sanity+ RESET);
 
     }
 
