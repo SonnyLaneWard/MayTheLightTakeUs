@@ -56,6 +56,7 @@ public class GamePlay {
             DarkEntities lich = new DarkEntities();
             lich.setName("KING LICH");
             lich.setStrength(8);
+            PrintLich.print();
             lich.talk();
             System.out.println(YELLOW + "You can peek at his stats if you want but it will cost you sanity" + RESET);
             System.out.println(YELLOW + "SO? (1 - yes, 0- no)" + RESET);
