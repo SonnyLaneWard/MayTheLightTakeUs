@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class GamePlay {
     public static final String RESET = "\u001B[0m";
@@ -8,7 +9,7 @@ public class GamePlay {
     public static final String GREEN = "\u001B[32m";
     public static final String YELLOW = "\u001B[33m";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 
         Scanner in = new Scanner(System.in);
@@ -124,7 +125,8 @@ public class GamePlay {
         else if (command == 3)
         {
             System.out.println(YELLOW + begin.number(7) + RESET);//climb
-            System.out.println(YELLOW + "You can roll the dice - just insert 1" + RESET);
+
+
            int num = Dice.rollDice();
             Dice.printDice(num);
 
