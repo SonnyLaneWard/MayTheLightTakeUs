@@ -8,9 +8,9 @@ public class Dice {
 
     public static int rollDice() throws InterruptedException {
         System.out.println(RED +"So the dice of luck is rolled.... ");
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(3);
         System.out.println("............................................. "+ RESET);
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(3);
         Random random = new Random();
         int num = random.nextInt(7);
         return num;
@@ -19,11 +19,11 @@ public class Dice {
      public static void printDice(int num)
      {
          System.out.println("You got " + num);
-         if (num ==1)
+         if (num ==0)
          {
              System.out.println(RED + "You are a very unlucky person");
 
-             System.out.println("-----" + RESET);
+             System.out.println(" " + RESET);
          }
 
          if (num ==1)
