@@ -72,6 +72,7 @@ public class GamePlay {
 
             LichDialog.talk();
             LichFight.fight();
+            PrintLich.printdead();
             System.out.println(GREEN + "All that left of lich is his staff, so you pick it"+ RESET);
             System.out.println(YELLOW + "You now have a new weapon" + RESET);
             Weapon weapon = new Weapon(2, "Lich's Staff");
