@@ -80,6 +80,20 @@ public String number(int num_story)
                 System.out.println(ex.getMessage());
             }
             break;
+        case (5) :
+            try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\sin\\IdeaProjects\\MayTheLightTakeUs\\src\\main\\java\\StoneWall.txt")))
+            {
+
+
+                s=br.readLine();
+
+
+            }
+            catch(IOException ex){
+
+                System.out.println(ex.getMessage());
+            }
+            break;
         default:
             throw new IllegalStateException("Unexpected value: " + num_story);
     }

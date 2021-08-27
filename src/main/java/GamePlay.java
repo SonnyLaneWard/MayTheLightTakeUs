@@ -79,7 +79,8 @@ public class GamePlay {
         }
        else if (command == 2)
         {
-            hero.statistics();
+            System.out.println(YELLOW + begin.number(5) + RESET);
+
         }
         else if (command == 3)
         {
