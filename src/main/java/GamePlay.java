@@ -77,6 +77,7 @@ public class GamePlay {
             System.out.println(YELLOW + "You now have a new weapon" + RESET);
             Weapon weapon = new Weapon(2, "Lich's Staff");
             Stats.stats(weapon);
+            System.out.println("You see a ladder up");
 
 
         }
@@ -122,6 +123,7 @@ public class GamePlay {
             {
                 System.out.println(YELLOW + "Empty" + RESET);
             }
+            System.out.println("You see a ladder up");
 
         }
         else if (command == 3)
@@ -131,7 +133,47 @@ public class GamePlay {
 
            int num = Dice.rollDice();
             Dice.printDice(num);
+            while (num < 4)
+            {
+                System.out.println("You slip and fall down");
+                System.out.println(YELLOW + begin.number(4) + RESET);
+                hero.talk();
+                hero.setSanity(9);
+                hero.statistics();
+                hero.talk();
+                DarkEntities lich = new DarkEntities();
+                lich.setName("KING LICH");
+                lich.setStrength(8);
+                PrintLich.print();
+                lich.talk();
+                System.out.println(YELLOW + "You can peek at his stats if you want but it will cost you sanity" + RESET);
+                System.out.println(YELLOW + "SO? (1 - yes, 0- no)" + RESET);
+                int peek = in.nextInt();
+                if (peek == 1)
+                {
+                    hero.setSanity(8);
+                    Stats.stats(hero, lich);
+                }
+                else if (peek == 0){
+                    System.out.println(YELLOW + "I get it - you are tough" + RESET);
+                }
 
+                LichDialog.talk();
+                LichFight.fight();
+                PrintLich.printdead();
+                System.out.println(GREEN + "All that left of lich is his staff, so you pick it"+ RESET);
+                System.out.println(YELLOW + "You now have a new weapon" + RESET);
+                Weapon weapon = new Weapon(2, "Lich's Staff");
+                Stats.stats(weapon);
+
+            }
+            System.out.println("You see a ladder up");
         }
+
+
+
+
+
+
     }
 }

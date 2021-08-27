@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class PrintLich {
     public static final String RESET = "\u001B[0m";
@@ -16,11 +17,12 @@ public class PrintLich {
             {
                 String s = br.readLine();
                 System.out.println(s);
+                TimeUnit.SECONDS.sleep(1);
             }
 
 
         }
-        catch(IOException ex){
+        catch(IOException | InterruptedException ex){
 
             System.out.println(ex.getMessage());
         }
