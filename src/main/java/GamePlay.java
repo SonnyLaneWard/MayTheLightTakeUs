@@ -117,13 +117,17 @@ public class GamePlay {
 
             if (choose == 3)
             {
-
+                System.out.println(YELLOW + "Empty" + RESET);
             }
 
         }
         else if (command == 3)
         {
-            hero.statistics();
+            System.out.println(YELLOW + begin.number(7) + RESET);//climb
+            System.out.println(YELLOW + "You can roll the dice - just insert 1" + RESET);
+           int num = Dice.rollDice();
+            Dice.printDice(num);
+
         }
     }
 }

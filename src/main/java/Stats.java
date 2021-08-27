@@ -11,7 +11,6 @@ public class Stats {
     public static void stats(HeroEntities hero)
     {
         System.out.println(RED +"---------------------------------------------------------------------------");
-             System.out.println("---------------------------------------------------------------------------");
         System.out.println(hero.statistics());
         System.out.println(RED +"---------------------------------------------------------------------------" + RESET);
 
@@ -19,7 +18,6 @@ public class Stats {
     public static void stats(HeroEntities hero, DarkEntities enemy)
     {
         System.out.println(RED +"---------------------------------------------------------------------------");
-        System.out.println("---------------------------------------------------------------------------");
         System.out.println(hero.statistics());
         System.out.println(enemy.statistics());
         System.out.println(RED +"---------------------------------------------------------------------------" + RESET);
@@ -27,8 +25,7 @@ public class Stats {
     public static void stats(Weapon weapon)
     {
         System.out.println(RED +"---------------------------------------------------------------------------");
-        System.out.println("---------------------------------------------------------------------------");
         System.out.println(weapon.statistics());
-           System.out.println(RED +"---------------------------------------------------------------------------" + RESET);
+        System.out.println(RED +"---------------------------------------------------------------------------" + RESET);
     }
 }
