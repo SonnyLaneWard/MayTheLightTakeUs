@@ -18,7 +18,13 @@ public class Dice {
     }
      public static void printDice(int num)
      {
-         System.out.println("You got" + num);
+         System.out.println("You got " + num);
+         if (num ==1)
+         {
+             System.out.println(RED + "You are a very unlucky person");
+
+             System.out.println("-----" + RESET);
+         }
 
          if (num ==1)
          {
