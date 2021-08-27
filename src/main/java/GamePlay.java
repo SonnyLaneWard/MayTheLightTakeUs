@@ -79,7 +79,23 @@ public class GamePlay {
         }
        else if (command == 2)
         {
+
             System.out.println(YELLOW + begin.number(5) + RESET);
+            StoneWall wall = new StoneWall();
+            wall.printStoneWall();
+            int answer = in.nextInt();
+            if (answer == 55)
+            {
+                wall.crackWall();
+            }
+            else if (answer != 55)
+            {
+               wall.wallFall();
+               hero.setStrenth(strength - 2);
+               hero.setSanity(sanity - 2);
+               Stats.stats(hero);
+
+            }
 
         }
         else if (command == 3)
