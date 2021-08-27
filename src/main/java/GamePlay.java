@@ -92,8 +92,31 @@ public class GamePlay {
             {
                wall.wallFall();
                hero.setStrenth(strength - 2);
+                System.out.println(YELLOW + "|strength - 2  sanity - 2|" + RESET);
                hero.setSanity(sanity - 2);
                Stats.stats(hero);
+            }
+            System.out.println(YELLOW + begin.number(6) + RESET);//choose loot
+            int choose = in.nextInt();
+
+
+            if (choose == 1)
+            {
+                System.out.println(YELLOW + "A big lizzard jumps from under the sone and bites you on the neck" + RESET);
+                System.out.println(YELLOW + "|strength - 2  sanity - 2|" + RESET);
+                System.out.println(YELLOW + "And you fall" + RESET);
+            }
+
+            if (choose == 2)
+            {
+                System.out.println(YELLOW + "Theres an old axe" + RESET);
+                Weapon weapon = new Weapon(3, "Rusty Axe");
+                Stats.stats(hero);
+                Stats.stats(weapon);
+            }
+
+            if (choose == 3)
+            {
 
             }
 
