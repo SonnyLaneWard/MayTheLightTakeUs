@@ -31,6 +31,7 @@ public class StoneWall {
         System.out.println("-----                                                                 -----");
         System.out.println("----------------                                  -------------------------");
         System.out.println("--------                 -----------                     ------------------" + RESET);
+        System.out.println(RED + "the wall cracks and falls - you can enter the cage" + RESET);
     }
     public void wallFall()
     {
