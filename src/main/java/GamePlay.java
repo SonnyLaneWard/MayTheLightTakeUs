@@ -102,7 +102,7 @@ public class GamePlay {
 
             if (choose == 1)
             {
-                System.out.println(YELLOW + "A big lizzard jumps from under the sone and bites you on the neck" + RESET);
+                System.out.println(YELLOW + "A big lizzard jumps from under the stone and bites you on the neck" + RESET);
                 System.out.println(YELLOW + "|strength - 2  sanity - 2|" + RESET);
                 System.out.println(YELLOW + "And you fall" + RESET);
             }
